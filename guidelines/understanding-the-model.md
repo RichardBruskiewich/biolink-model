@@ -54,7 +54,7 @@ The model itself is organized using BiolinkML Class definition (class), Slot def
 >
 > To avoid ambiguity in semantics, prefixes are MUST for classes and certain slots.
 >
-> To avoid ambuguity it semantics, prefixes are RECOMMENDED for all slots.
+> To avoid ambuiuity it semantics, prefixes are RECOMMENDED for all slots.
 
 
 At a glance the structure is as follows,
@@ -114,9 +114,7 @@ The root of all associations is the `association` class.
 
 Mixins are classes that contain slots (properties) or  slots  which embody a generic slot semantic definition, for use across several other classes or slots.
 
-Mixins are abstract classes/slots and they cannot be instantiated by themselves. That is, there cannot be an instance of a mixin class or slot value (e.g. predicate slot) used as 'data'.  
-
-However, a class `mixin` _**may**_ be given as the `domain` or `range` specification of an association or a `mixin` slot may be  given as a `subproperty_of` constraint, with the strict understanding that when the given association  or slot is deployed as an element in a knowledge graph, that the actual values used in the instantiated nodes and edges of the graph will be "concrete" classes or slots that have or inherited those `mixin` elements as `mixins`.
+Mixins are abstract classes/slots and they cannot be instantiated by themselves. That is, there cannot be an instance of a mixin class or slot value (e.g. predicate slot) used as 'data'.
 
 Mixins are defined as a way of encouraging reuse of specific slots (properties) while ensuring a clear inheritance chain.
 
